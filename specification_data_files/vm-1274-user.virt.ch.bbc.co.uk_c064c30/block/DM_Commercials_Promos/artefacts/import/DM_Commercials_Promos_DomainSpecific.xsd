@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:pc1="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Commercials_Promos_DomainSpecific/" xmlns:cmn="http://www.amwa.tv/projects/rules/01/block/DM_Common/" targetNamespace="http://vm-1274-user.virt.ch.bbc.co.uk/as/block/DM_Commercials_Promos_DomainSpecific/" elementFormDefault="qualified">
+
+  <xs:import namespace="http://www.amwa.tv/projects/rules/01/block/DM_Common/" schemaLocation="DM_Common.xsd"/>
+
+  <xs:element name="Promos_Commercials_DM" minOccurs="1" maxOccurs="1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice id="Material_Type" minOccurs="1" maxOccurs="1">
+          <xs:sequence>
+            <xs:element name="Commercials" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="Advertiser" type="cmn:string127" minOccurs="1" maxOccurs="1"/>
+          </xs:sequence>
+          <xs:sequence>
+            <xs:element name="Sponsorship" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="Advertiser" type="cmn:string127" minOccurs="1" maxOccurs="1"/>
+          </xs:sequence>
+          <xs:sequence>
+            <xs:element name="Informercials" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="Advertiser" type="cmn:string127" minOccurs="1" maxOccurs="1"/>
+          </xs:sequence>
+          <xs:sequence>
+            <xs:element name="Presentation_Event" minOccurs="1" maxOccurs="1"/>
+          </xs:sequence>
+          <xs:sequence>
+            <xs:element name="Promotion" minOccurs="1" maxOccurs="1"/>
+          </xs:sequence>
+        </xs:choice>
+        <xs:sequence>
+          <xs:element name="Brand" type="cmn:string127" minOccurs="1" maxOccurs="1">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">
+                e.g. Commercial:"Fizzy Frogs" / Promotion:"Channel 6" / PresentationEvent:"5Twelve"
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="Campaign" type="cmn:string127" minOccurs="1" maxOccurs="1">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">
+                e.g. Commercial:"Easter Hunt" / Promotion:"Wildlife Uncovered" / PresentationEvent:"Spring 2018 re-brand"
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="Title" type="cmn:string127" minOccurs="1" maxOccurs="1">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">
+                e.g. Commercial:"20sec Weekend a.m." / Promotion:"Episode 2" / PresentationEvent:"Ident Description"
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="Version" type="cmn:string127" minOccurs="1" maxOccurs="1">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">
+                e.g. Commercial:"Pre-Watershed" / Promotion:"Tonight - 20s" / PresentationEvent:"HD with 5.1 audio"
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="Manifestation" type="cmn:string127" minOccurs="0" maxOccurs="1">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">
+                e.g. Commercial:"for Mobile Phone Delivery" / Promotion:"Clean / Nations" / PresentationEvent:"End credit squeeze / sting"
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="Originator" type="cmn:string127" minOccurs="1" maxOccurs="1">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">
+                e.g. Production House
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="Supplier" type="cmn:string127" minOccurs="1" maxOccurs="1">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">
+                Not to be confused with Originator - Supplier here means the physical source of the file when delivered to broadcaster, e.g. Clearcast
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
