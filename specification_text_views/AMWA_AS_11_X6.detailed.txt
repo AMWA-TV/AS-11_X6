@@ -65,7 +65,7 @@ An implementation complies with this Specification if it complies with the Compo
     <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/FF_12/>
     [B] File Format with Parameter Keys
         Conformance: mandatory
-        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/FF_13/>
+        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/FF_14/>
         [B] Core MXF constraints
             Conformance: mandatory
             <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/MXF_Core_OP1a1b3b/>
@@ -2086,9 +2086,9 @@ An implementation complies with this Specification if it complies with the Compo
                     <Component ID: http://www.amwa.tv/projects/rules/01/note/051/artefacts/1.md>
         [B] Specification Identification
             Conformance: mandatory
-            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID_2/>
+            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID_3/>
             [A] The <Specification_Identifiers> Element is present in the <Preface> of the <Header Partition>.
-                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID_2/artefacts/1.md>
+                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID_3/artefacts/1.md>
                 [B] Specification_Identifiers
                     <Component ID: http://www.amwa.tv/projects/rules/01/block/SpecID/>
                     [A] Artefact copied to: ../specification_data_files/www.amwa.tv_c0f7b64/block/SpecID/artefacts/Elements.xml
@@ -2120,12 +2120,12 @@ An implementation complies with this Specification if it complies with the Compo
                         [T] Essence
                             A bitstream comprising picture, sound or data.
                             <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
-            [A] The value of this Element includes the Label <Blocks_FF_13> and the Label(s) specified by <File Format Specification Identification Label>.
-                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID_2/artefacts/2.md>
-                [B] Blocks_FF_13
-                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID_L13/>
-                    [A] Artefact copied to: ../specification_data_files/vm-1274-user.virt.ch.bbc.co.uk_c064c30/block/SpecID_L13/artefacts/Labels.xml
-                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID_L13/artefacts/Labels.xml>
+            [A] The value of this Element includes the Label <Blocks_FF_14> and the Label(s) specified by <File Format Specification Identification Label>.
+                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID_3/artefacts/2.md>
+                [B] Blocks_FF_14
+                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID_L14/>
+                    [A] Artefact copied to: ../specification_data_files/vm-1274-user.virt.ch.bbc.co.uk_c064c30/block/SpecID_L14/artefacts/Labels.xml
+                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID_L14/artefacts/Labels.xml>
                     [N] SMPTE Registers Node: Specification_Identification (Labels Register)
                         <Component ID: http://www.amwa.tv/projects/rules/01/note/Specification_Identification_L/>
                         [A] Artefact copied to: ../specification_data_files/www.amwa.tv_c0f7b64/note/Specification_Identification_L/artefacts/Labels.xml
@@ -2405,160 +2405,223 @@ An implementation complies with this Specification if it complies with the Compo
                         [T] Material Package
                             An MXF data structure that describes an output timeline of the file.
                             <Component ID: http://www.amwa.tv/projects/rules/01/term/Material%20Package/>
-        [B] Timed Text Subtitles/Captions
+        [B] Subtitles/Closed Captions
             Conformance: optional
-            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/IMSC1/>
-            [A] Subtitles conform to <W3C REC-ttml-imsc1.1-20181108> Text or Image profile.
-                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/IMSC1/artefacts/1.md>
-                [R] W3C REC-ttml-imsc1.1-20181108
-                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/W3C%20TTML-IMSC1.1-20181108/>
-            [A] One or more <TTML> subtitle documents are carried in <Essence Container>s, and their resources in <Generic Stream Container>s, according to <SMPTE ST 2067-2:2016>.
-                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/IMSC1/artefacts/2.md>
-                [T] TTML
-                    Timed Text Markup Language. An XML content type that describes text delivered on a timeline.
-                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/TTML/>
-                [T] Essence Container
-                    A part of an MXF file that carries one or more <Essence> streams.
-                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence%20Container/>
-                    [T] Essence
-                        A bitstream comprising picture, sound or data.
-                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
-                [T] Generic Stream Container
-                    MXF data structure used to store unevenly-distributed <Essence> or large amounts of metadata.
-                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Generic%20Stream%20Container/>
-                    [T] Essence
-                        A bitstream comprising picture, sound or data.
-                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
-                [R] SMPTE ST 2067-2:2016
-                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/SMPTE%20ST%202067-2-2016/>
-            [A] These documents and their resources are placed before the <Picture Essence> and <Sound Essence> in the file.
-                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/IMSC1/artefacts/3.md>
-                [T] Picture Essence
-                    A type of <Essence> containing predominantly picture data.
-                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence/>
-                    [T] Essence
-                        A bitstream comprising picture, sound or data.
-                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
-                [T] Sound Essence
-                    A type of <Essence> containing sound data.
-                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Sound%20Essence/>
-                    [T] Essence
-                        A bitstream comprising picture, sound or data.
-                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
-            [A] The durations of the <Source Clip>s of <TTML> <Data Track>s in the <Material Package> are the same as the durations of the corresponding <TTML> files.
-                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/IMSC1/artefacts/4.md>
-                [T] Source Clip
-                    An MXF structure that enables a portion of one <Track> to be referenced by another <Track>.
-                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Source%20Clip/>
-                    [T] Track
-                        MXF data structure used to describe the content structure.
-                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
-                [T] TTML
-                    Timed Text Markup Language. An XML content type that describes text delivered on a timeline.
-                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/TTML/>
-                [T] Data Track
-                    A type of <Essence Track> that references <Data Essence>.
-                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Data%20Track/>
-                    [T] Essence Track
-                        A type of <Track> that references <Essence>.
-                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence%20Track/>
-                        [T] Track
-                            MXF data structure used to describe the content structure.
-                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
+            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/Subtitle_Choice/>
+            [A] Subtitles are embedded using one of <Timed Text Subtitles/Captions> or <OP-47 Teletext Subtitles/Captions>.
+                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/Subtitle_Choice/artefacts/1.md>
+                [B] Timed Text Subtitles/Captions
+                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/IMSC1/>
+                    [A] Subtitles conform to <W3C REC-ttml-imsc1.1-20181108> Text or Image profile.
+                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/IMSC1/artefacts/1.md>
+                        [R] W3C REC-ttml-imsc1.1-20181108
+                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/W3C%20TTML-IMSC1.1-20181108/>
+                    [A] One or more <TTML> subtitle documents are carried in <Essence Container>s, and their resources in <Generic Stream Container>s, according to <SMPTE ST 2067-2:2016>.
+                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/IMSC1/artefacts/2.md>
+                        [T] TTML
+                            Timed Text Markup Language. An XML content type that describes text delivered on a timeline.
+                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/TTML/>
+                        [T] Essence Container
+                            A part of an MXF file that carries one or more <Essence> streams.
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence%20Container/>
+                            [T] Essence
+                                A bitstream comprising picture, sound or data.
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                        [T] Generic Stream Container
+                            MXF data structure used to store unevenly-distributed <Essence> or large amounts of metadata.
+                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Generic%20Stream%20Container/>
+                            [T] Essence
+                                A bitstream comprising picture, sound or data.
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                        [R] SMPTE ST 2067-2:2016
+                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/SMPTE%20ST%202067-2-2016/>
+                    [A] These documents and their resources are placed before the <Picture Essence> and <Sound Essence> in the file.
+                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/IMSC1/artefacts/3.md>
+                        [T] Picture Essence
+                            A type of <Essence> containing predominantly picture data.
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence/>
+                            [T] Essence
+                                A bitstream comprising picture, sound or data.
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                        [T] Sound Essence
+                            A type of <Essence> containing sound data.
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Sound%20Essence/>
+                            [T] Essence
+                                A bitstream comprising picture, sound or data.
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                    [A] The durations of the <Source Clip>s of <TTML> <Data Track>s in the <Material Package> are the same as the durations of the corresponding <TTML> files.
+                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/IMSC1/artefacts/4.md>
+                        [T] Source Clip
+                            An MXF structure that enables a portion of one <Track> to be referenced by another <Track>.
+                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Source%20Clip/>
+                            [T] Track
+                                MXF data structure used to describe the content structure.
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
+                        [T] TTML
+                            Timed Text Markup Language. An XML content type that describes text delivered on a timeline.
+                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/TTML/>
+                        [T] Data Track
+                            A type of <Essence Track> that references <Data Essence>.
+                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Data%20Track/>
+                            [T] Essence Track
+                                A type of <Track> that references <Essence>.
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence%20Track/>
+                                [T] Track
+                                    MXF data structure used to describe the content structure.
+                                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
+                                [T] Essence
+                                    A bitstream comprising picture, sound or data.
+                                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                            [T] Data Essence
+                                Types of <Essence> that are not picture or sound.
+                                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Data%20Essence/>
+                                [T] Essence
+                                    A bitstream comprising picture, sound or data.
+                                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                        [T] Material Package
+                            An MXF data structure that describes an output timeline of the file.
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Material%20Package/>
+                    [N] Implementation Notes
+                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/IMSC1/>
+                        [A] * The method of embedding <TTML> subtitles corresponds to that used by <IMF>, but <IMF> subtitles are stored in separate mono-<Essence> files, and conform to version 1.0 of IMSC (as of <SMPTE ST 2067-2:2016>).
+                            * Inserting all the subtitle information before the <Picture Essence> and <Sound Essence> allows playback to commence correctly before the file is available in its entirety.
+                            * <Filler> objects can be used to align subtitles to the other <Essence>. For example, a lead-in of non-programme content may be added for distribution. A <Filler> object of the length of this lead-in can be added to the <TTML> <Data Track> in the <Material Package> before the <Source Clip> which references the <Data Track> in the <Top-Level File Package>. This avoids the need for the subtitle document to be modified to maintain alignment.
+                            * Subtitles are embedded using <Clip Wrapping>, whereas <Picture Essence> and <Sound Essence> employ <Frame Wrapping>. This requires separate <Essence Container>s to be used, resulting in more than one file <Source Package>, and hence the file will be signalled as OP1b (<SMPTE ST 391:2004>). However, if any <Filler> objects are used, the <Material Package> will contain edit decisions, so the file becomes OP3b (<SMPTE ST 407:2006>).
+                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/IMSC1/artefacts/1.md>
+                            [T] TTML
+                                Timed Text Markup Language. An XML content type that describes text delivered on a timeline.
+                                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/TTML/>
+                            [T] IMF
+                                Interoperable Master Format. A framework to accommodate programme material and the instructions for rendering different versions of it.
+                                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/IMF/>
+                            [T] Essence
+                                A bitstream comprising picture, sound or data.
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                            [R] SMPTE ST 2067-2:2016
+                                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/SMPTE%20ST%202067-2-2016/>
+                            [T] Picture Essence
+                                A type of <Essence> containing predominantly picture data.
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence/>
+                            [T] Sound Essence
+                                A type of <Essence> containing sound data.
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Sound%20Essence/>
+                            [T] Filler
+                                An MXF structure used to describe empty space on a <Timeline Track>.
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Filler/>
+                                [T] Timeline Track
+                                    A specialized MXF <Track> that describes a timeline by specifying an origin and rate.
+                                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Timeline%20Track/>
+                                    [T] Track
+                                        MXF data structure used to describe the content structure.
+                                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
+                            [T] Data Track
+                                A type of <Essence Track> that references <Data Essence>.
+                                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Data%20Track/>
+                                [T] Essence Track
+                                    A type of <Track> that references <Essence>.
+                                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence%20Track/>
+                                    [T] Track
+                                        MXF data structure used to describe the content structure.
+                                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
+                                [T] Data Essence
+                                    Types of <Essence> that are not picture or sound.
+                                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Data%20Essence/>
+                            [T] Material Package
+                                An MXF data structure that describes an output timeline of the file.
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Material%20Package/>
+                            [T] Source Clip
+                                An MXF structure that enables a portion of one <Track> to be referenced by another <Track>.
+                                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Source%20Clip/>
+                                [T] Track
+                                    MXF data structure used to describe the content structure.
+                                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
+                            [T] Top-Level File Package
+                                A <Source Package> that is internal to the file and which is directly referenced by a <Material Package> of the file.
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Top-Level%20File%20Package/>
+                                [T] Source Package
+                                    MXF data structure that describes source <Essence>.
+                                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Source%20Package/>
+                            [T] Clip Wrapping
+                                A method for carrying an entire <Essence> stream as one contiguous unit.
+                                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Clip%20Wrapping/>
+                            [T] Frame Wrapping
+                                A method for dividing and interleaving <Essence Element>s for each frame of <Picture Essence>.
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Frame%20Wrapping/>
+                                [T] Essence Element
+                                    The entire essence stream of a single <Track>.
+                                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence%20Element/>
+                                    [T] Track
+                                        MXF data structure used to describe the content structure.
+                                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
+                            [T] Essence Container
+                                A part of an MXF file that carries one or more <Essence> streams.
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence%20Container/>
+                            [T] Source Package
+                                MXF data structure that describes source <Essence>.
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Source%20Package/>
+                            [R] SMPTE ST 391:2004
+                                <Component ID: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20ST%20391-2004/>
+                            [R] SMPTE ST 407:2006
+                                <Component ID: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20ST%20407-2006/>
+                [B] OP-47 Teletext Subtitles/Captions
+                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/OP-47/>
+                    [A] Subtitles are formatted as World System Teletext.
+                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/OP-47/artefacts/1.md>
+                    [A] Subtitles are mapped into <VANC Data Packet>s in accordance with <Free TV Australia Operational Practice OP-47>.
+                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/OP-47/artefacts/2.md>
+                        [T] VANC Data Packet
+                            An ancillary data packet in the vertical ancillary data space (VANC).
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/VANC%20Data%20Packet/>
+                        [R] Free TV Australia Operational Practice OP-47
+                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/FreeTV%20OP-47-Issue6/>
+                    [A] The mapping of <VANC Data Packet>s into <ANC Frame Element>s is as specified in <SMPTE ST 436-1:2013>.
+                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/OP-47/artefacts/3.md>
+                        [T] VANC Data Packet
+                            An ancillary data packet in the vertical ancillary data space (VANC).
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/VANC%20Data%20Packet/>
+                        [T] ANC Frame Element
+                            A KLV triplet containing one frame's worth of an <Essence Element> carrying ANC packets such as <VANC Data Packet>s.
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/ANC%20Frame%20Element/>
+                            [T] Essence Element
+                                The entire essence stream of a single <Track>.
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence%20Element/>
+                                [T] Track
+                                    MXF data structure used to describe the content structure.
+                                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
+                        [R] SMPTE ST 436-1:2013
+                            <Component ID: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20ST%20436-1-2013/>
+                    [A] The "Line Number" used for each frame's <VANC Data Packet> in the <ANC Frame Element> is 575.
+                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/OP-47/artefacts/4.md>
+                        [T] VANC Data Packet
+                            An ancillary data packet in the vertical ancillary data space (VANC).
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/VANC%20Data%20Packet/>
+                        [T] ANC Frame Element
+                            A KLV triplet containing one frame's worth of an <Essence Element> carrying ANC packets such as <VANC Data Packet>s.
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/ANC%20Frame%20Element/>
+                            [T] Essence Element
+                                The entire essence stream of a single <Track>.
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence%20Element/>
+                                [T] Track
+                                    MXF data structure used to describe the content structure.
+                                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
+                    [A] There is one OP-47 packet per frame and this packet contains exactly one line of teletext data.
+                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/OP-47/artefacts/5.md>
+                    [A]  Teletext lines not occupied by subtitle headers or subtitle data are filled with Page 8FF sub page 3F7E.
+                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/OP-47/artefacts/6.md>
+                    [A] If CBE <Essence> is being used, the identical size of all <Edit Unit>s is ensured by employing <KLV Fill> items as required.
+                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/OP-47/artefacts/7.md>
                         [T] Essence
                             A bitstream comprising picture, sound or data.
                             <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
-                    [T] Data Essence
-                        Types of <Essence> that are not picture or sound.
-                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Data%20Essence/>
-                        [T] Essence
-                            A bitstream comprising picture, sound or data.
-                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
-                [T] Material Package
-                    An MXF data structure that describes an output timeline of the file.
-                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Material%20Package/>
-            [N] Implementation Notes
-                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/IMSC1/>
-                [A] * The method of embedding <TTML> subtitles corresponds to that used by <IMF>, but <IMF> subtitles are stored in separate mono-<Essence> files, and conform to version 1.0 of IMSC (as of <SMPTE ST 2067-2:2016>).
-                    * Inserting all the subtitle information before the <Picture Essence> and <Sound Essence> allows playback to commence correctly before the file is available in its entirety.
-                    * <Filler> objects can be used to align subtitles to the other <Essence>. For example, a lead-in of non-programme content may be added for distribution. A <Filler> object of the length of this lead-in can be added to the <TTML> <Data Track> in the <Material Package> before the <Source Clip> which references the <Data Track> in the <Top-Level File Package>. This avoids the need for the subtitle document to be modified to maintain alignment.
-                    * Subtitles are embedded using <Clip Wrapping>, whereas <Picture Essence> and <Sound Essence> employ <Frame Wrapping>. This requires separate <Essence Container>s to be used, resulting in more than one file <Source Package>, and hence the file will be signalled as OP1b (<SMPTE ST 391:2004>). However, if any <Filler> objects are used, the <Material Package> will contain edit decisions, so the file becomes OP3b (<SMPTE ST 407:2006>).
-                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/IMSC1/artefacts/1.md>
-                    [T] TTML
-                        Timed Text Markup Language. An XML content type that describes text delivered on a timeline.
-                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/TTML/>
-                    [T] IMF
-                        Interoperable Master Format. A framework to accommodate programme material and the instructions for rendering different versions of it.
-                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/IMF/>
-                    [T] Essence
-                        A bitstream comprising picture, sound or data.
-                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
-                    [R] SMPTE ST 2067-2:2016
-                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/SMPTE%20ST%202067-2-2016/>
-                    [T] Picture Essence
-                        A type of <Essence> containing predominantly picture data.
-                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence/>
-                    [T] Sound Essence
-                        A type of <Essence> containing sound data.
-                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Sound%20Essence/>
-                    [T] Filler
-                        An MXF structure used to describe empty space on a <Timeline Track>.
-                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Filler/>
-                        [T] Timeline Track
-                            A specialized MXF <Track> that describes a timeline by specifying an origin and rate.
-                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Timeline%20Track/>
+                        [T] Edit Unit
+                            A temporal division of a <Track>.
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Edit%20Unit/>
                             [T] Track
                                 MXF data structure used to describe the content structure.
                                 <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
-                    [T] Data Track
-                        A type of <Essence Track> that references <Data Essence>.
-                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Data%20Track/>
-                        [T] Essence Track
-                            A type of <Track> that references <Essence>.
-                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence%20Track/>
-                            [T] Track
-                                MXF data structure used to describe the content structure.
-                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
-                        [T] Data Essence
-                            Types of <Essence> that are not picture or sound.
-                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Data%20Essence/>
-                    [T] Material Package
-                        An MXF data structure that describes an output timeline of the file.
-                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Material%20Package/>
-                    [T] Source Clip
-                        An MXF structure that enables a portion of one <Track> to be referenced by another <Track>.
-                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Source%20Clip/>
-                        [T] Track
-                            MXF data structure used to describe the content structure.
-                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
-                    [T] Top-Level File Package
-                        A <Source Package> that is internal to the file and which is directly referenced by a <Material Package> of the file.
-                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Top-Level%20File%20Package/>
-                        [T] Source Package
-                            MXF data structure that describes source <Essence>.
-                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Source%20Package/>
-                    [T] Clip Wrapping
-                        A method for carrying an entire <Essence> stream as one contiguous unit.
-                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/Clip%20Wrapping/>
-                    [T] Frame Wrapping
-                        A method for dividing and interleaving <Essence Element>s for each frame of <Picture Essence>.
-                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Frame%20Wrapping/>
-                        [T] Essence Element
-                            The entire essence stream of a single <Track>.
-                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence%20Element/>
-                            [T] Track
-                                MXF data structure used to describe the content structure.
-                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
-                    [T] Essence Container
-                        A part of an MXF file that carries one or more <Essence> streams.
-                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence%20Container/>
-                    [T] Source Package
-                        MXF data structure that describes source <Essence>.
-                        <Component ID: http://www.amwa.tv/projects/rules/01/term/Source%20Package/>
-                    [R] SMPTE ST 391:2004
-                        <Component ID: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20ST%20391-2004/>
-                    [R] SMPTE ST 407:2006
-                        <Component ID: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20ST%20407-2006/>
+                        [T] KLV Fill
+                            Refers to the well-defined means of inserting empty, "fill", data in an MXF file.
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/KLV%20Fill/>
         [N] Implementation Notes
             <Component ID: http://www.amwa.tv/projects/rules/01/note/implementation4/>
             [A] ## Essence Container Label

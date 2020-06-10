@@ -423,9 +423,9 @@ An implementation complies with this Specification if it complies with the Compo
                     [A] Artefact copied to: ../specification_data_files/www.amwa.tv_c0f7b64/block/SpecID/artefacts/Types.xml
                     [N] SMPTE Registers Node: Specification_Identification (Elements Register)
                         [A] Artefact copied to: ../specification_data_files/www.amwa.tv_c0f7b64/note/Specification_Identification_E/artefacts/Elements.xml
-            [A] The value of this Element includes the Label <Blocks_FF_13> and the Label(s) specified by <File Format Specification Identification Label>.
-                [B] Blocks_FF_13
-                    [A] Artefact copied to: ../specification_data_files/vm-1274-user.virt.ch.bbc.co.uk_c064c30/block/SpecID_L13/artefacts/Labels.xml
+            [A] The value of this Element includes the Label <Blocks_FF_14> and the Label(s) specified by <File Format Specification Identification Label>.
+                [B] Blocks_FF_14
+                    [A] Artefact copied to: ../specification_data_files/vm-1274-user.virt.ch.bbc.co.uk_c064c30/block/SpecID_L14/artefacts/Labels.xml
                     [N] SMPTE Registers Node: Specification_Identification (Labels Register)
                         [A] Artefact copied to: ../specification_data_files/www.amwa.tv_c0f7b64/note/Specification_Identification_L/artefacts/Labels.xml
                 [K] File Format Specification Identification Label
@@ -502,17 +502,27 @@ An implementation complies with this Specification if it complies with the Compo
                 [A] The <Timecode Track> in the <Material Package> defines the authoritative program timecode.
                 [N] Implementation Notes
                     [A] The <Timecode> defined by the <Timecode Track> in the <Material Package> must be used by all the components of a system that handles the file. Other <Timecode>s could be present in the file but these are not authoritative -- these other <Timecode>s could be used by certain systems for very specialist purposes (such as keeping track of where each frame of content originated from) but they must never be used as the authoritative / principal <Timecode> for the content.
-        [B] Timed Text Subtitles/Captions
+        [B] Subtitles/Closed Captions
             Conformance: optional
-            [A] Subtitles conform to <W3C REC-ttml-imsc1.1-20181108> Text or Image profile.
-            [A] One or more <TTML> subtitle documents are carried in <Essence Container>s, and their resources in <Generic Stream Container>s, according to <SMPTE ST 2067-2:2016>.
-            [A] These documents and their resources are placed before the <Picture Essence> and <Sound Essence> in the file.
-            [A] The durations of the <Source Clip>s of <TTML> <Data Track>s in the <Material Package> are the same as the durations of the corresponding <TTML> files.
-            [N] Implementation Notes
-                [A] * The method of embedding <TTML> subtitles corresponds to that used by <IMF>, but <IMF> subtitles are stored in separate mono-<Essence> files, and conform to version 1.0 of IMSC (as of <SMPTE ST 2067-2:2016>).
-                    * Inserting all the subtitle information before the <Picture Essence> and <Sound Essence> allows playback to commence correctly before the file is available in its entirety.
-                    * <Filler> objects can be used to align subtitles to the other <Essence>. For example, a lead-in of non-programme content may be added for distribution. A <Filler> object of the length of this lead-in can be added to the <TTML> <Data Track> in the <Material Package> before the <Source Clip> which references the <Data Track> in the <Top-Level File Package>. This avoids the need for the subtitle document to be modified to maintain alignment.
-                    * Subtitles are embedded using <Clip Wrapping>, whereas <Picture Essence> and <Sound Essence> employ <Frame Wrapping>. This requires separate <Essence Container>s to be used, resulting in more than one file <Source Package>, and hence the file will be signalled as OP1b (<SMPTE ST 391:2004>). However, if any <Filler> objects are used, the <Material Package> will contain edit decisions, so the file becomes OP3b (<SMPTE ST 407:2006>).
+            [A] Subtitles are embedded using one of <Timed Text Subtitles/Captions> or <OP-47 Teletext Subtitles/Captions>.
+                [B] Timed Text Subtitles/Captions
+                    [A] Subtitles conform to <W3C REC-ttml-imsc1.1-20181108> Text or Image profile.
+                    [A] One or more <TTML> subtitle documents are carried in <Essence Container>s, and their resources in <Generic Stream Container>s, according to <SMPTE ST 2067-2:2016>.
+                    [A] These documents and their resources are placed before the <Picture Essence> and <Sound Essence> in the file.
+                    [A] The durations of the <Source Clip>s of <TTML> <Data Track>s in the <Material Package> are the same as the durations of the corresponding <TTML> files.
+                    [N] Implementation Notes
+                        [A] * The method of embedding <TTML> subtitles corresponds to that used by <IMF>, but <IMF> subtitles are stored in separate mono-<Essence> files, and conform to version 1.0 of IMSC (as of <SMPTE ST 2067-2:2016>).
+                            * Inserting all the subtitle information before the <Picture Essence> and <Sound Essence> allows playback to commence correctly before the file is available in its entirety.
+                            * <Filler> objects can be used to align subtitles to the other <Essence>. For example, a lead-in of non-programme content may be added for distribution. A <Filler> object of the length of this lead-in can be added to the <TTML> <Data Track> in the <Material Package> before the <Source Clip> which references the <Data Track> in the <Top-Level File Package>. This avoids the need for the subtitle document to be modified to maintain alignment.
+                            * Subtitles are embedded using <Clip Wrapping>, whereas <Picture Essence> and <Sound Essence> employ <Frame Wrapping>. This requires separate <Essence Container>s to be used, resulting in more than one file <Source Package>, and hence the file will be signalled as OP1b (<SMPTE ST 391:2004>). However, if any <Filler> objects are used, the <Material Package> will contain edit decisions, so the file becomes OP3b (<SMPTE ST 407:2006>).
+                [B] OP-47 Teletext Subtitles/Captions
+                    [A] Subtitles are formatted as World System Teletext.
+                    [A] Subtitles are mapped into <VANC Data Packet>s in accordance with <Free TV Australia Operational Practice OP-47>.
+                    [A] The mapping of <VANC Data Packet>s into <ANC Frame Element>s is as specified in <SMPTE ST 436-1:2013>.
+                    [A] The "Line Number" used for each frame's <VANC Data Packet> in the <ANC Frame Element> is 575.
+                    [A] There is one OP-47 packet per frame and this packet contains exactly one line of teletext data.
+                    [A]  Teletext lines not occupied by subtitle headers or subtitle data are filled with Page 8FF sub page 3F7E.
+                    [A] If CBE <Essence> is being used, the identical size of all <Edit Unit>s is ensured by employing <KLV Fill> items as required.
         [N] Implementation Notes
             [A] ## Essence Container Label
                 The stated constraints mean that the <Essence Container Label> used to identify the <Picture Essence> mapping is always urn:smpte:ul:060e2b34.0401010a.0d010301.02106001 (MXFGCAVCByteStreamWithVideoStream0SIDFrameWrapped)
