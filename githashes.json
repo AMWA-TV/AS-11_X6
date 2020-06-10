@@ -10,7 +10,7 @@
         }, 
         {
             "repo_url": "git@github.com:AMWA-TV/rules-components-AS-11-wip.git", 
-            "commit": "bcfd606a7f519004bf0d374c121b92d4c1217414"
+            "commit": "5b680cd4d48a7f9d7bc438fc979f4fc176b659eb"
         }, 
         {
             "repo_url": "git@github.com:AMWA-TV/rules-processor.git", 
