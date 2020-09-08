@@ -27,17 +27,16 @@
       </xs:choice>
     </xs:complexType>
   </xs:element>
-
   <xs:complexType name="Core_type">
     <xs:sequence>
-      <xs:element name="Brand" type="cmn:string127" minOccurs="0">
+      <xs:element name="Brand" type="cmn:string127" minOccurs="0" maxOccurs="1">
         <xs:annotation>
           <xs:documentation xml:lang="en">
             e.g. Commercial:"Fizzy Frogs" / Promotion:"Channel 6" / PresentationEvent:"5Twelve"
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="Campaign" type="cmn:string127" minOccurs="0">
+      <xs:element name="Campaign" type="cmn:string127" minOccurs="0" maxOccurs="1">
         <xs:annotation>
           <xs:documentation xml:lang="en">
             e.g. Commercial:"Easter Hunt" / Promotion:"Wildlife Uncovered" / PresentationEvent:"Spring 2018 re-brand"
@@ -76,6 +75,13 @@
         <xs:annotation>
           <xs:documentation xml:lang="en">
             Not to be confused with Originator - Supplier here means the physical source of the file when delivered to the broadcaster
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Subtitle_Language" type="cmn:BCP47_language_tag" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            A code to identify the language of closed captions - optional since IMSC1.1 subtitles carry the language tag in their own document. Useful for OP-47 subtitles if supported.
           </xs:documentation>
         </xs:annotation>
       </xs:element>
