@@ -522,7 +522,11 @@ An implementation complies with this Specification if it complies with the Compo
                     [A] The "Line Number" used for each frame's <VANC Data Packet> in the <ANC Frame Element> is 575.
                     [A] There is one OP-47 packet per frame and this packet contains exactly one line of teletext data.
                     [A]  Teletext lines not occupied by subtitle headers or subtitle data are filled with Page 8FF sub page 3F7E.
-                    [A] If CBE <Essence> is being used, the identical size of all <Edit Unit>s is ensured by employing <KLV Fill> items as required.
+                    [N] Implementation Notes
+                        [A] ## CBE <Essence>
+                            The stated constraints result in the subtitles having a fixed data size, provided that parameters such as <SMPTE ST 436-1:2013> payload sample coding and padding are applied consistently throughout. Thus, CBE <Essence> will be maintained.
+                            
+                            (If other ancillary data of variable size is present, the preferred method to accommodate this is by employing <KLV Fill> items as required.)
         [N] Implementation Notes
             [A] ## Essence Container Label
                 The stated constraints mean that the <Essence Container Label> used to identify the <Picture Essence> mapping is always urn:smpte:ul:060e2b34.0401010a.0d010301.02106001 (MXFGCAVCByteStreamWithVideoStream0SIDFrameWrapped)

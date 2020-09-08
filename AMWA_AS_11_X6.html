@@ -2945,10 +2945,29 @@
 <p>Teletext lines not occupied by subtitle headers or subtitle data are filled with Page 8FF sub page 3F7E.</p>
                                         </div>
                                     </li>
-                                    <li data-jstree='{"icon":"include/artefact.png"}' id='779042339e0a964b437ffde828caae1f'>
+                                    <li data-jstree='{"icon":"include/note.png"}' id='8b8b125f3959c817d05c9c56ebf65ea0'>
                                         <div class='content_container clearfix'>
-<p>If CBE <a class='' data-toggle='tooltip' href='#a2db301d86a5b89829270ea4b6909413' title='A bitstream comprising picture, sound or data.'>Essence</a> is being used, the identical size of all <a class='' data-toggle='tooltip' href='#4e13594f29fcb36c791d21552b048165' title='A temporal division of a &lt;Track&gt;.'>Edit Unit</a>s is ensured by employing <a class='' data-toggle='tooltip' href='#e150f270c1c3baec0b46a4b383c31e21' title='Refers to the well-defined means of inserting empty, &quot;fill&quot;, data in an MXF file.'>KLV Fill</a> items as required.</p>
+<b>Implementation Notes</b>
                                         </div>
+                                        <ul>
+                                        <li data-jstree='{"icon":"include/cog.png"}' id='8b8b125f3959c817d05c9c56ebf65ea0-info'>
+                                            <p class='info'>Component metadata</p>
+                                            <ul>
+                                            <li data-jstree='{"icon":"hidden", "disabled":"true"}' id='8b8b125f3959c817d05c9c56ebf65ea0-info-ID'>
+                                                <p class='info'><b>ID:</b> <a class='' data-toggle='tooltip' href='#component-id-message' title='ID (identity) of this Rules-based Specification Component: Click to read an explanation'>http://vm-1274-user.virt.ch.bbc.co.uk/as/note/OP-47/</a></p>
+                                            </li>
+                                            </ul>
+                                        </li>
+                                        <li data-jstree='{"icon":"include/noteartefact.png"}' id='a83dcabbc45e77b93b14091ebfdaf8ec'>
+                                            <div class='content_container clearfix'>
+<h4>CBE <a class='' data-toggle='tooltip' href='#a2db301d86a5b89829270ea4b6909413' title='A bitstream comprising picture, sound or data.'>Essence</a></h4>
+
+<p>The stated constraints result in the subtitles having a fixed data size, provided that parameters such as <a class='' data-toggle='tooltip' href='#7ec98526b41fc148fb9fc2830ac0ca8a' title='MXF Mappings for VI Lines and Ancillary Data Packets'>SMPTE ST 436-1:2013</a> payload sample coding and padding are applied consistently throughout. Thus, CBE <a class='' data-toggle='tooltip' href='#a2db301d86a5b89829270ea4b6909413' title='A bitstream comprising picture, sound or data.'>Essence</a> will be maintained.</p>
+
+<p>(If other ancillary data of variable size is present, the preferred method to accommodate this is by employing <a class='' data-toggle='tooltip' href='#e150f270c1c3baec0b46a4b383c31e21' title='Refers to the well-defined means of inserting empty, &quot;fill&quot;, data in an MXF file.'>KLV Fill</a> items as required.)</p>
+                                            </div>
+                                        </li>
+                                        </ul>
                                     </li>
                                     </ul>
                                 </li>

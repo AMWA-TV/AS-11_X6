@@ -2608,20 +2608,21 @@ An implementation complies with this Specification if it complies with the Compo
                         <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/OP-47/artefacts/5.md>
                     [A]  Teletext lines not occupied by subtitle headers or subtitle data are filled with Page 8FF sub page 3F7E.
                         <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/OP-47/artefacts/6.md>
-                    [A] If CBE <Essence> is being used, the identical size of all <Edit Unit>s is ensured by employing <KLV Fill> items as required.
-                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/OP-47/artefacts/7.md>
-                        [T] Essence
-                            A bitstream comprising picture, sound or data.
-                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
-                        [T] Edit Unit
-                            A temporal division of a <Track>.
-                            <Component ID: http://www.amwa.tv/projects/rules/01/term/Edit%20Unit/>
-                            [T] Track
-                                MXF data structure used to describe the content structure.
-                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Track/>
-                        [T] KLV Fill
-                            Refers to the well-defined means of inserting empty, "fill", data in an MXF file.
-                            <Component ID: http://www.amwa.tv/projects/rules/01/term/KLV%20Fill/>
+                    [N] Implementation Notes
+                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/OP-47/>
+                        [A] ## CBE <Essence>
+                            The stated constraints result in the subtitles having a fixed data size, provided that parameters such as <SMPTE ST 436-1:2013> payload sample coding and padding are applied consistently throughout. Thus, CBE <Essence> will be maintained.
+                            
+                            (If other ancillary data of variable size is present, the preferred method to accommodate this is by employing <KLV Fill> items as required.)
+                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/OP-47/artefacts/1.md>
+                            [T] Essence
+                                A bitstream comprising picture, sound or data.
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                            [R] SMPTE ST 436-1:2013
+                                <Component ID: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20ST%20436-1-2013/>
+                            [T] KLV Fill
+                                Refers to the well-defined means of inserting empty, "fill", data in an MXF file.
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/KLV%20Fill/>
         [N] Implementation Notes
             <Component ID: http://www.amwa.tv/projects/rules/01/note/implementation4/>
             [A] ## Essence Container Label

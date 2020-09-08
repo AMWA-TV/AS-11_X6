@@ -9,12 +9,12 @@
             "commit": "21f0698ea3489d7313fe8eb0617ab7965ac29a2c"
         }, 
         {
-            "repo_url": "git@github.com:AMWA-TV/rules-processor.git", 
-            "commit": "e9410fe935be11a6d05b8f0e175cf59386585d10"
+            "repo_url": "git@github.com:AMWA-TV/rules-components-AS-11-wip.git", 
+            "commit": "957a0cb2786c77bb48451b9ede6651d630b03646"
         }, 
         {
-            "repo_url": "git@github.com:AMWA-TV/rules-components-AS-11-wip.git", 
-            "commit": "ed112bb3718bd50ceec81c39c5e276b8a0626cf4"
+            "repo_url": "git@github.com:AMWA-TV/rules-processor.git", 
+            "commit": "e9410fe935be11a6d05b8f0e175cf59386585d10"
         }
     ]
 }
