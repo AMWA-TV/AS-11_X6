@@ -2565,8 +2565,11 @@ An implementation complies with this Specification if it complies with the Compo
                                 <Component ID: http://www.amwa.tv/projects/rules/01/external_reference_revision/SMPTE%20ST%20407-2006/>
                 [B] OP-47 Teletext Subtitles/Captions
                     <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/OP-47/>
-                    [A] Subtitles are formatted as World System Teletext.
+                    [A] Subtitles are formatted as <World System Teletext>.
                         <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/OP-47/artefacts/1.md>
+                        [T] World System Teletext
+                            The standard for encoding and displaying teletext used throughout Europe and in other parts of the world. Also known as CCIR Teletext System B.
+                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/World%20System%20Teletext/>
                     [A] Subtitles are mapped into <VANC Data Packet>s in accordance with <Free TV Australia Operational Practice OP-47>.
                         <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/OP-47/artefacts/2.md>
                         [T] VANC Data Packet

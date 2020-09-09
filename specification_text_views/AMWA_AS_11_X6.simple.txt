@@ -516,7 +516,7 @@ An implementation complies with this Specification if it complies with the Compo
                             * <Filler> objects can be used to align subtitles to the other <Essence>. For example, a lead-in of non-programme content may be added for distribution. A <Filler> object of the length of this lead-in can be added to the <TTML> <Data Track> in the <Material Package> before the <Source Clip> which references the <Data Track> in the <Top-Level File Package>. This avoids the need for the subtitle document to be modified to maintain alignment.
                             * Subtitles are embedded using <Clip Wrapping>, whereas <Picture Essence> and <Sound Essence> employ <Frame Wrapping>. This requires separate <Essence Container>s to be used, resulting in more than one file <Source Package>, and hence the file will be signalled as OP1b (<SMPTE ST 391:2004>). However, if any <Filler> objects are used, the <Material Package> will contain edit decisions, so the file becomes OP3b (<SMPTE ST 407:2006>).
                 [B] OP-47 Teletext Subtitles/Captions
-                    [A] Subtitles are formatted as World System Teletext.
+                    [A] Subtitles are formatted as <World System Teletext>.
                     [A] Subtitles are mapped into <VANC Data Packet>s in accordance with <Free TV Australia Operational Practice OP-47>.
                     [A] The mapping of <VANC Data Packet>s into <ANC Frame Element>s is as specified in <SMPTE ST 436-1:2013>.
                     [A] The "Line Number" used for each frame's <VANC Data Packet> in the <ANC Frame Element> is 575.
