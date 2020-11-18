@@ -1,4 +1,4 @@
-# **[Work In Progress]** AS-11 X6 (MXF Program Contribution - DPP HD Commercials and Promotions)
+# **[Specification]** AS-11 X6 (MXF Program Contribution - DPP HD Commercials and Promotions)
 
 |*Important links*| |
 |-----------------|-|
@@ -344,7 +344,7 @@ An implementation complies with this Specification if it complies with the Compo
             Conformance: mandatory
             [A] Each XML document identified by <List of Embedded XML Documents> is embedded in the file using <XML Document in Header Metadata Carriage>.
                 [K] List of Embedded XML Documents
-                    Associated Parameter Value: "List of Embedded XML Documents" (Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param_link_19/)
+                    Associated Parameter Value: "List of Embedded XML Documents" (Component ID: http://www.amwa.tv/projects/rules/01/block/param_link_19/)
                     [A] Lists XML documents to be embedded, defined in terms of:
                         
                         * the namespace of the document's root element
@@ -425,11 +425,11 @@ An implementation complies with this Specification if it complies with the Compo
                         [A] Artefact copied to: ../specification_data_files/www.amwa.tv_c0f7b64/note/Specification_Identification_E/artefacts/Elements.xml
             [A] The value of this Element includes the Label <Blocks_FF_14> and the Label(s) specified by <File Format Specification Identification Label>.
                 [B] Blocks_FF_14
-                    [A] Artefact copied to: ../specification_data_files/vm-1274-user.virt.ch.bbc.co.uk_c064c30/block/SpecID_L14/artefacts/Labels.xml
+                    [A] Artefact copied to: ../specification_data_files/www.amwa.tv_c0f7b64/block/SpecID_L14/artefacts/Labels.xml
                     [N] SMPTE Registers Node: Specification_Identification (Labels Register)
                         [A] Artefact copied to: ../specification_data_files/www.amwa.tv_c0f7b64/note/Specification_Identification_L/artefacts/Labels.xml
                 [K] File Format Specification Identification Label
-                    Associated Parameter Value: "File Format Specification Identification Label" (Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param_link_20/)
+                    Associated Parameter Value: "File Format Specification Identification Label" (Component ID: http://www.amwa.tv/projects/rules/01/block/param_link_20/)
         [B] Dolby Audio Metadata
             Conformance: optional
             [A] The <Dolby E Audio Metadata Serial Bitstream> that describes an <Audio Program> is included in the file using <Dolby E Audio Metadata Serial Bitstream Carriage>.
@@ -537,7 +537,7 @@ An implementation complies with this Specification if it complies with the Compo
             Conformance: mandatory
             [A] The namespace of the document's root element is <Commercials and Promotions Descriptive Metadata>; the name of the document's root element is "Commercials_Promos_DM"; the Media type (MIME type) for the document is "application/xml".
                 [B] Commercials and Promotions Descriptive Metadata
-                    [A] Artefact copied to: ../specification_data_files/vm-1274-user.virt.ch.bbc.co.uk_c064c30/block/DM_Commercials_Promos/artefacts/DM_Commercials_Promos.xsd
+                    [A] Artefact copied to: ../specification_data_files/www.amwa.tv_c0f7b64/block/DM_Commercials_Promos/artefacts/DM_Commercials_Promos.xsd
     [V] Picture Essence Constraints
         Conformance: mandatory
         Associated Parameter Key: "Picture Essence Constraints" (Component ID: http://www.amwa.tv/projects/rules/01/block/param2/)
@@ -560,7 +560,7 @@ An implementation complies with this Specification if it complies with the Compo
         Associated Parameter Key: "File Format Specification Identification Label" (Component ID: http://www.amwa.tv/projects/rules/01/block/param3/)
         [B] Blocks_FF_12
             Conformance: mandatory
-            [A] Artefact copied to: ../specification_data_files/vm-1274-user.virt.ch.bbc.co.uk_c064c30/block/SpecID_L12/artefacts/Labels.xml
+            [A] Artefact copied to: ../specification_data_files/www.amwa.tv_c0f7b64/block/SpecID_L12/artefacts/Labels.xml
             [N] SMPTE Registers Node: Specification_Identification (Labels Register)
                 [A] Artefact copied to: ../specification_data_files/www.amwa.tv_c0f7b64/note/Specification_Identification_L/artefacts/Labels.xml
     [V] Labels for use in Multichannel Audio Labeling Framework

@@ -1,4 +1,4 @@
-# **[Work In Progress]** AS-11 X6 (MXF Program Contribution - DPP HD Commercials and Promotions)
+# **[Specification]** AS-11 X6 (MXF Program Contribution - DPP HD Commercials and Promotions)
 
 This repository contains the full details of this [AMWA Specification](https://www.amwa.tv/as-11-x6/). For the latest version of this repository please refer to [its GitHub project](https://github.com/AMWA-TV/AS-11_X6/).
 
