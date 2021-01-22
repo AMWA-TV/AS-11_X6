@@ -9,8 +9,9 @@ amwa_id: AS-11_X6
 baseurl: /as-11_x6
 
 # Which release or branch appears in header links and on the home page
-default_tree: branches/master
+default_tree: branches/publish-with-render-dir
 
 # Regex patterns of releases and branches to show
 show_releases: 
-show_branches: ^master$|^main$|^publish-
+#show_branches: ^master$|^main$|^publish-
+show_branches: publish-
