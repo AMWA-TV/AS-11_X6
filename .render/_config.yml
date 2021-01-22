@@ -12,6 +12,5 @@ baseurl: /as-11_x6
 default_tree: branches/publish-with-render-dir
 
 # Regex patterns of releases and branches to show
-show_releases: 
-#show_branches: ^master$|^main$|^publish-
-show_branches: publish-
+show_releases: ^v[0-9]+\.[0-9]+$|^v[0-9]+\.[0-9]+\.[0-9]+$
+show_branches: ^master|^main|publish-
