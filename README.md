@@ -1,4 +1,4 @@
-# **[Specification]** AS-11 X6 (MXF Program Contribution - DPP HD Commercials and Promotions)
+# **[Specification (Published)]** AS-11 X6 (MXF Program Contribution - DPP HD Commercials and Promotions)
 
 ### **View the latest version of this Specification online [here](https://amwa-tv.github.io/AS-11_X6/AMWA_AS_11_X6.html)**.
 
